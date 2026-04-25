@@ -1,5 +1,13 @@
 return {
   {
+    "gaoDean/autolist.nvim",
+    ft = { "markdown" },
+    config = function()
+      require("autolist").setup()
+    end,
+  },
+
+  {
     "stevearc/conform.nvim",
     -- event = 'BufWritePre', -- uncomment for format on save
     opts = require "configs.conform",
