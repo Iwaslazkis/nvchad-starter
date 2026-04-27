@@ -6,6 +6,7 @@ local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
+map("t", "<A-Esc>", [[<C-\><C-n>]], { desc = "Exit terminal mode" })
 
 map("n", "<leader>fo", function()
   require("telescope.builtin").oldfiles {
