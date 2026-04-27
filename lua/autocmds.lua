@@ -10,7 +10,7 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.linebreak = true
     vim.opt_local.breakindent = true
     vim.opt_local.breakat:append "-"
-    vim.opt_local.formatoptions:append { "r", "o", "n" }
+    vim.opt_local.formatoptions:append "ron"
 
     local ok = pcall(require, "autolist")
     if not ok then
